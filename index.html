@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Frame Using p5.js</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+</head>
+<body style="background-color:purple;text-align:center;">
+    <div class="container">
+        <br><br><br>
+        <button onclick="take_snapshot()" class="btn btn-success" style="margin-bottom:20px;">Take Snapshot</button>        
+    </div>
+</body>
+<script>
+    function preload(){
+
+    }
+    function setup(){
+        canvas=createCanvas(700,600);
+        canvas.center();
+        video=createCapture(VIDEO);
+        video.hide();
+    }
+    function draw(){
+        image(video,50,50,500,450);
+        fill('green');
+        circle(50,50,50);
+        circle(50,100,50);
+        circle(50,150,50);
+        circle(50,200,50);
+        circle(50,250,50);
+        circle(50,300,50);
+        circle(50,350,50);
+        circle(50,400,50);
+        circle(50,450,50);
+        circle(50,500,50);
+        circle(100,500,50);
+        circle(150,500,50);
+        circle(200,500,50);
+        circle(250,500,50);
+        circle(300,500,50);
+        circle(350,500,50);
+        circle(400,500,50);
+        circle(450,500,50);
+        circle(500,500,50);
+        circle(550,500,50);
+        circle(550,450,50);
+        circle(550,400,50);
+        circle(550,350,50);
+        circle(550,300,50);
+        circle(550,250,50);
+        circle(550,200,50);
+        circle(550,150,50);
+        circle(550,100,50);
+        circle(550,50,50);
+        circle(500,50,50);
+        circle(450,50,50);
+        circle(400,50,50);
+        circle(350,50,50);
+        circle(300,50,50);
+        circle(250,50,50);
+        circle(200,50,50);
+        circle(150,50,50);
+        circle(100,50,50);
+    }
+    function take_snapshot(){
+        save('My Picture.PNG');
+    }
+</script>
+</html>
